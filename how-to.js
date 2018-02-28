@@ -20,9 +20,3 @@ JSON.stringify(arrChunks[0], null, '	');
 // returns "[ "text", "text" ]"
 // paste in file and delete start/end double quotes
 // [ "text", "text" ]
-
-
-// var arrToObj = arrChunks[].reduce(function(acc, cur, i) {
-//   acc[i] = cur;
-//   return acc;
-// }, {});
