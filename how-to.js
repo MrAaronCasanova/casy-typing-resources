@@ -15,10 +15,14 @@ function chunkArray(arr, len) {
 }
 var arrChunks = chunkArray(selectionContent, 100);
 
-var arrToObj = arrChunks[].reduce(function(acc, cur, i) {
-  acc[i] = cur;
-  return acc;
-}, {});
-
 //https://stackoverflow.com/questions/10689475/how-to-view-extended-objects-arrays-in-chrome-console
-JSON.stringify(arrChunks, null, '	');
+JSON.stringify(arrChunks[0], null, '	');
+// returns "[ "text", "text" ]"
+// paste in file and delete start/end double quotes
+// [ "text", "text" ]
+
+
+// var arrToObj = arrChunks[].reduce(function(acc, cur, i) {
+//   acc[i] = cur;
+//   return acc;
+// }, {});
